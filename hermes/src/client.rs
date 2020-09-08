@@ -11,6 +11,4 @@ impl Client {
             stream: BufWriter::new(stream),
         }
     }
-
-    pub(crate) fn parse_packet(&self) -> crate::Result<Option<Packet>> {}
 }

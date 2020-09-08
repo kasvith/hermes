@@ -1,11 +1,6 @@
-[package]
-name = "hermes"
-version = "0.1.0"
-authors = ["Kasun Vithanage <alankasun@gmail.com>"]
-edition = "2018"
+[workspace]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-tokio = { version = "0.2", features = ["full"] }
-bytes = "0.5.6"
+members = [
+    "hermes",
+    "mqtt"
+]
