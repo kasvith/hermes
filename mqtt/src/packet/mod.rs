@@ -51,4 +51,6 @@ pub enum MqttError {
 
 pub trait Packet {
     fn parse<Reader: Read>(rdr: Reader) -> Result<(), MqttError>;
+    fn get_type() -> PacketType;
+    fn length() -> usize;
 }
